@@ -3,11 +3,14 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	height: 100%;
 	width: 100%;
+	padding: 20px;
+`;
+
+export const List = styled.div`
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: row;
 	place-content: center;
 	flex-wrap: wrap;
-	padding: 20px;
 `;
 
 export const Box = styled.ul`
@@ -18,6 +21,7 @@ export const Box = styled.ul`
 	padding: 40px;
 	border-radius: 20px;
 	background: #151c32;
+	margin: 10px;
 
 	img {
 		max-width: 150px;
@@ -27,20 +31,31 @@ export const Box = styled.ul`
 `;
 
 export const Options = styled.div`
-	display: flex;
-	justify-content: space-around;
-	margin-top: 20px;
+	margin: 10px;
+	text-align: -webkit-center;
 `;
 
 export const Button = styled.button`
   background: ${(props) => props.background};
 	color: #fff;
-	padding: 20px; 10px;
+	padding: 10px; 0px;
   border-radius: 5px;
   margin-right: 10px;
+`;
 
-  :disabled {
-    opacity: 0.4;
-    cursor: default;
-  }
+export const Form = styled.form`
+	margin-bottom: 40px;
+`;
+
+export const Input = styled.input`
+	border: 0;
+	padding: 5px;
+	border-radius: 2px;
+`;
+
+export const FormButton = styled.button`
+	border: 0;
+	padding: 5px;
+	background: ${(props) => props.background};
+	color: #fff;
 `;
