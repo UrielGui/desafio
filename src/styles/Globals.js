@@ -15,6 +15,13 @@ export default createGlobalStyle`
   }
   button {
     cursor: pointer;
+    :hover {
+      opacity: 0.8;
+    }
+    :disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
   }
   ul {
     list-style: none;
